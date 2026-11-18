@@ -4428,6 +4428,7 @@ final class BoardController {
         mover.runAction(SCNAction.sequence([lift, glide, drop, done]))
         DispatchQueue.main.asyncAfter(deadline: .now() + 1.9) { finish() }
     }
+    }
     final class SpaceScene {
     let scene = SCNScene()
     let boardMount = SCNNode()
